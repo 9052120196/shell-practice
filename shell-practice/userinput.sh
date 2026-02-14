@@ -1,5 +1,7 @@
 #!/bin/bash
 
-user_name="$1"
-please enter your name 
-echo "$1: good moring"
+echo "please enter your name"
+
+read user_name
+
+echo "$username:good morning"
