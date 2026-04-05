@@ -1,7 +1,7 @@
 #!/bin/bash
 User_id=$(id -u)
 
-if[ $User_id -ne 0]; then
+if[ $User_id -ne 0 ]; then
   echo "please run the script with root user access"
   fi
 
