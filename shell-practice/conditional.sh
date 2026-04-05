@@ -1,11 +1,10 @@
 #!/bin/bash
 
-Num1=40
-Num2=90
-Total=$(Num1+Num2)
+Number=$1
 
-if [$Total -eq 120];then 
-echo "The  total sum is not 120"
+
+if [$Number -gt 30];then 
+echo "Given number :$Number is greater than 30"
 else 
-echo "The total sum is 130"
+echo "Given number :$Number is not greater than 30"
 fi
