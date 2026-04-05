@@ -1,6 +1,6 @@
 #!/bin/bash
-person_1="ravi"
-person_2="bhaskar"
+person_1="venkat"
+person_2="Raju"
 
 
 echo "$person_1:I ramana how are you ?I am doing well thanks for asking .How do you do ?"
