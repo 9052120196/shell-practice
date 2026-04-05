@@ -1,5 +1,5 @@
 #!/bin/bash
 
-fruits={["orange" "apple" "banana"]}
+fruits=("orange" "apple" "banana")
 
-echo "print $fruits"
+echo "fruits are: {$fruits[@]}"
