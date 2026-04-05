@@ -2,6 +2,6 @@
 
 echo "please enter your name"
 
-read user_name
+read -s user_name
 
 echo "$username:good morning"
