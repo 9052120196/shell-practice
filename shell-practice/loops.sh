@@ -19,6 +19,8 @@ VALIDATE(){
 }
 
 for package in $@
+if [ $? -ne 0 ];then
+echo "$package is not installed,Installing the package"
 do
 dnf install $package -y
 VALIDATE $? "$package installation"
