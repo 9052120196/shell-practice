@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]; then
    exit 1
   fi
 
-echo "installing nginx"
+
 
 
 VALIDATE(){
@@ -19,9 +19,12 @@ VALIDATE(){
 }
 
 for package in $@
-if [ $? -ne 0 ];then
-echo "$package is not installed,Installing the package"
 do
-dnf install $package -y
-VALIDATE $? "$package installation"
+if [ $? -ne 0 ];then
+  echo "$package is not installed,Installing the package"
+  dnf install $package -y
+  VALIDATE $? "$package installation"
+  else
+  echo "$package already installed,skipping"
+  fi
 done
